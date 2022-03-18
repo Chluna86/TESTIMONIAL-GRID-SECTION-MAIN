@@ -104,3 +104,25 @@ img {
 .data {
 
 }
+
+.comment{
+    font-size: 1.1rem;
+    font-weight: 600;
+    /* margin: auto 40px auto 0; */
+}
+
+.comment, .name{
+    color: var(--White);
+}
+
+.description {
+    font-weight: 500;
+    text-align: left;
+}
+
+.card3 > .box > .comment, 
+.card5 > .box > .comment,
+.card3 > .box > .profile > .data > .name, 
+.card5 > .box > .profile > .data > .name {
+    color: var(--Very-dark-blackish-blue);
+}   

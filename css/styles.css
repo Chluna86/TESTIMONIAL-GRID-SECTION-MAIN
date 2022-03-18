@@ -99,6 +99,7 @@ main > div {
 
 img {
     border-radius: 50%;
+    height: 38px;
 }
 
 .data {
@@ -107,22 +108,34 @@ img {
 
 .comment{
     font-size: 1.1rem;
-    font-weight: 600;
+    /* font-weight: 600; */
     /* margin: auto 40px auto 0; */
 }
 
-.comment, .name{
+.comment, .name, .verified, .description{
     color: var(--White);
+    font-weight: 600;
+}
+
+.verified {
+    opacity: 0.5;
+    font-weight: 500;
 }
 
 .description {
+    font-size: 0.8rem;
     font-weight: 500;
     text-align: left;
+    opacity: 0.7;
 }
 
 .card3 > .box > .comment, 
 .card5 > .box > .comment,
+.card3 > .box > .description, 
+.card5 > .box > .description,
 .card3 > .box > .profile > .data > .name, 
-.card5 > .box > .profile > .data > .name {
+.card5 > .box > .profile > .data > .name,
+.card3 > .box > .profile > .data > .verified, 
+.card5 > .box > .profile > .data > .verified {
     color: var(--Very-dark-blackish-blue);
 }   

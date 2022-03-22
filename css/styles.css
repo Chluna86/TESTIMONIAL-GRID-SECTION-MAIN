@@ -23,8 +23,8 @@
 body {
     font-size: 13px;
     font-family: var(--font);
-    width: 1440px;
-    height: 900px;
+    width: 100vw;
+    height: 90vh;
     background-color: var(--Light-grayish-blue);
 }
 main {
@@ -32,7 +32,7 @@ main {
     grid-gap: 10px;
     width: 1110px;
     height: 572px;
-    margin: 165px;
+    margin: 165px 167px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 24px 30px;
@@ -136,4 +136,24 @@ img {
 .card3 > .box > .profile > .data > .verified, 
 .card5 > .box > .profile > .data > .verified {
     color: var(--Very-dark-blackish-blue);
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        display: grid;
+        /* grid-gap: 10px; */
+        width: 100vw;
+        height: 100vh;
+        margin: 165px 167px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 24px 24px;
+    }
+
+    .card5 { 
+        grid-row: 3 / 4;
+        grid-column: 1 / 5;
+        height: auto;
+        width: 825px;
+    }
 }
